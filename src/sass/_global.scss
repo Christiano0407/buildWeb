@@ -37,6 +37,30 @@ h1, h2, h3 {
     color: $darkBlue;
     margin-top: 0rem;
 }
+h1 {
+    font-size: 2.31rem;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(large) {
+        font-size: $font-xlg;
+    }
+}
+h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+
+    @include breakpoint-up(large) {
+        font-size: 2.25rem;
+        margin-bottom: 2.25rem;
+    }
+}
+p {
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
+}
+a, a:visited, a:hover {
+    text-decoration: none;
+}
 
 //Spacing
 .container {
