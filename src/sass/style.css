@@ -171,6 +171,18 @@ a, a:visited, a:hover {
   }
 }
 
+.container--py {
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 4.375rem;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;

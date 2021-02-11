@@ -79,6 +79,17 @@ a, a:visited, a:hover {
         }
     }
 
+    &--py {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+            padding-bottom: 4.375rem;
+        }
+    }
+    
+
 }
 
 //flex 
