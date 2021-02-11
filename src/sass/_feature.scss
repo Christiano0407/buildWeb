@@ -1,0 +1,9 @@
+.feature {
+    background-color: $lightGrayishBlue;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+        text-align: left;
+    }
+    
+}

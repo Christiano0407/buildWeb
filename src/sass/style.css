@@ -475,4 +475,15 @@ button:hover::before, .button:hover::before {
     text-align: left;
   }
 }
+
+.feature {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .feature {
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=style.css.map */
