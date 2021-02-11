@@ -89,7 +89,31 @@ a, a:visited, a:hover {
         }
     }
     
+    &--px {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+    }
+    &--pt {
+        padding-top: 4.375rem;
 
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+        }
+    }
+    &--pr {
+        padding-right: 1.5rem;
+    }
+
+    &--pb {
+        padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 6rem;
+        }
+    }
+    &--pl {
+        padding-left: 1.5rem;
+    }
 }
 
 //flex 
