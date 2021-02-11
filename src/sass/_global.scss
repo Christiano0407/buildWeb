@@ -30,6 +30,13 @@ body {
         overflow: hidden;
     }
 }
+//Text 
+h1, h2, h3 {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkBlue;
+    margin-top: 0rem;
+}
 
 //Spacing
 .container {
@@ -65,7 +72,37 @@ body {
     }
 }
 //Button 
+button, .button {
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 2.1875rem;
+    background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+    border: 0;
+    border-radius: 5rem;
+    color: $white;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: $font-sm;
+    transition: opacity 300ms ease-in-out;
+    overflow: hidden;
 
+    &:hover {
+        color: $darkBlue;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255,255,255, 0.25);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+    &:hover::before {
+        opacity: 1;
+    }
+}
 
 //Visibility 
 

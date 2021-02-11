@@ -84,4 +84,37 @@
         }
     }
 
+    &__links {
+        a {
+            position: relative;
+            font-size: $font-sm;
+            color: $grayishBlue;
+            transition: color 300ms ease-in-out;
+             
+            &:not(:last-child) {
+                margin-right: 3.2rem;
+            }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: .3rem;
+                left: 0;
+                right: 0;
+                bottom: -2rem;
+                background: linear-gradient(to right, $limeGreen, $brightCyan);
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+                border-radius: 5rem;
+                cursor: pointer;
+            }
+            &:hover {
+                color: $darkBlue;
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
 }
