@@ -79,7 +79,46 @@
                 color: $limeGreen;
             }
         }
+
+        &.col1 {
+            @include breakpoint-up(large) {
+                grid-area: links1;
+            }
+        }
+
+        &.col2 {
+          @include breakpoint-down(medium) {
+              margin-bottom: 1.875rem;
+          }
+          @include breakpoint-up(large) {
+              grid-area: links2;
+          }
+        }
+
     }
 
+    &__cta {
+        @include breakpoint-up(large) {
+            grid-area: cta;
+            text-align: right;
+            justify-self: end;
+        }
+        a.button {
+            @include breakpoint-down(medium) {
+                margin-bottom: 1.875rem;
+            }
+        }
+    }
+
+    &__copyright {
+        font-size: 0.8125rem;
+        color: $grayishBlue;
+
+        @include breakpoint-up(large) {
+            grid-area: copyright;
+            align-self: end;
+            justify-self: end;
+        }
+    }
 
 }
