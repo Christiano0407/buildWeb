@@ -669,4 +669,78 @@ button:hover::before, .button:hover::before {
 .article__description {
   font-size: 0.8125rem;
 }
+
+.footer {
+  background-color: #2d314d;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .footer .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr 3fr;
+        grid-template-columns: 2fr 1fr 1fr 3fr;
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
+    gap: 1rem;
+        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    justify-items: start;
+  }
+}
+
+.footer a {
+  color: white;
+}
+
+.footer__logo {
+  display: inline-block;
+}
+
+@media (max-width: 63.9375em) {
+  .footer__logo {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__logo {
+    grid-area: logo;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .footer__social {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__social {
+    grid-area: social;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+
+.footer__social a {
+  display: inline-block;
+  height: 1.25rem;
+}
+
+.footer__social a svg path {
+  -webkit-transition: fill 150ms ease-in-out;
+  transition: fill 150ms ease-in-out;
+}
+
+.footer__social a:hover svg path {
+  fill: #31d35c;
+}
+
+.footer__social a:not(:last-child) {
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
