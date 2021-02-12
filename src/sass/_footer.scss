@@ -58,7 +58,27 @@
     }
 
     &__links {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9375rem;
+
+
+        a {
+            line-height: 2.25;
+            font-weight: bold;
+            transition: color
+            150ms ease-in-out;
+
+            @include breakpoint-up(large) {
+                justify-content: space-between;
+                align-items: start;
+            }
+
+            &:hover {
+                color: $limeGreen;
+            }
+        }
     }
 
 

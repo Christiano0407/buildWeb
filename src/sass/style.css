@@ -743,4 +743,40 @@ button:hover::before, .button:hover::before {
 .footer__social a:not(:last-child) {
   margin-right: 1rem;
 }
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9375rem;
+}
+
+.footer__links a {
+  line-height: 2.25;
+  font-weight: bold;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+@media (min-width: 64em) {
+  .footer__links a {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+.footer__links a:hover {
+  color: #31d35c;
+}
 /*# sourceMappingURL=style.css.map */
