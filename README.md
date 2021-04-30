@@ -1,4 +1,4 @@
-# buildWeb
+# BuildWeb and Responsive with Sass
 Build  Responsive Web ( Sass, HTML, CSS and Javascript). Project with Figma. 
 
 # Front-end Style Guide
